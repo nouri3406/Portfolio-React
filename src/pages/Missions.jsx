@@ -6,37 +6,37 @@ export default function Missions() {
     () => [
       {
         title: "Pendu",
-        img: "/projects/Pendu-Tarot.jpg",
+        img: `${import.meta.env.BASE_URL}projects/Pendu-Tarot.jpg`,
         desc: "jeu pendu en Python",
         href: "https://github.com/nouri3406/Pendu"
       },
       {
         title: "Universal Converter",
-        img: "/projects/convertisseur.jpg",
+        img: `${import.meta.env.BASE_URL}projects/convertisseur.jpg`,
         desc: "Convertisseur hexadécimal/binaire/SCII en Python",
         href: "https://github.com/nouri3406/Universal-hex-bin-let-converter-"
       },
       {
         title: "Projet portfolio Natif ",
-        img: "/projects/Portfolio.jpg",
+        img: `${import.meta.env.BASE_URL}projects/Portfolio.jpg`,
         desc: "Portfolio en natif ( HTML/CSS/JS)",
         href: "https://nouri3406.github.io/Portfolio-Natif/"
       },   
       {
         title: "API rest",
-        img: "/projects/API.jpg",
+        img: `${import.meta.env.BASE_URL}projects/API.jpg`,
         desc: "API rest pour un JobBoard",
         href: "/case-files"
       },
       {
         title: "jeu 2 D",
-        img: "/projects/shoot em up.jpg",
+        img: `${import.meta.env.BASE_URL}projects/shoot em up.jpg`,
         desc: "Jeu 2D en Java",
         href: "/case-files"
       },
       {
         title: "tchat temps réél",
-        img: "/projects/Tchatche.jpg",
+        img: `${import.meta.env.BASE_URL}projects/Tchatche.jpg`,
         desc: "Socket.io pour un tchat",
         href: "/case-files"
       },

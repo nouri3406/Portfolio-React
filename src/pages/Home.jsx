@@ -51,17 +51,15 @@ export default function Home() {
     <span style={styles.cursor}>▋</span>
   </p>
 </section>
-
-      {/* MOSAÏQUE */}
+      
       <section className="home-grid" style={styles.grid}>
-        <Tile title="Control Room" image="/home-control.jpg" link="/control-room" />
-        <Tile title="Dossier Opérateur" image="/home-dossier.jpg" link="/dossier-operateur" />
-        <Tile title="Missions Déployées" image="/home-missions.jpg" link="/missions-deployees" />
-        <Tile title="Arsenal Technique" image="/home-arsenal.jpg" link="/arsenal-technique" />
-        <Tile title="Case Files" image="/home-cases.jpg" link="/case-files" />
-        <Tile title="Canal Direct" image="/home-contact.jpg" link="/canal-direct" />
+        <Tile title="Control Room" image={`${import.meta.env.BASE_URL}home-control.jpg`} link="/control-room" />
+        <Tile title="Dossier Opérateur" image={`${import.meta.env.BASE_URL}home-dossier.jpg`} link="/dossier-operateur" />
+        <Tile title="Missions Déployées" image={`${import.meta.env.BASE_URL}home-missions.jpg`} link="/missions-deployees" />
+        <Tile title="Arsenal Technique" image={`${import.meta.env.BASE_URL}home-arsenal.jpg`} link="/arsenal-technique" />
+        <Tile title="Case Files" image={`${import.meta.env.BASE_URL}home-cases.jpg`} link="/case-files" />
+        <Tile title="Canal Direct" image={`${import.meta.env.BASE_URL}home-contact.jpg`} link="/canal-direct" />
       </section>
-
     </div>
   );
 }

@@ -4,16 +4,16 @@ import { useMemo } from "react";
 export default function ArsenalTechnique() {
   const items = useMemo(
     () => [
-      { name: "HTML", src: "/logos/html.svg" },
-      { name: "CSS", src: "/logos/css.svg" },
-      { name: "JavaScript", src: "/logos/javascript.svg" },
-      { name: "NestJS", src: "/logos/nestjs.svg" },
-      { name: "Node.js", src: "/logos/nodejs.svg" },
-      { name: "Docker", src: "/logos/docker.svg" },
-      { name: "Python", src: "/logos/python.svg" },
-      { name: "Java", src: "/logos/java.svg" },
-      { name: "React", src: "/logos/nestjs.svg" },
-      { name: "Linux", src: "/logos/linux.svg" }
+      { name: "HTML", src: `${import.meta.env.BASE_URL}logos/html.svg` },
+      { name: "CSS", src: `${import.meta.env.BASE_URL}logos/css.svg` },
+      { name: "JavaScript", src: `${import.meta.env.BASE_URL}logos/javascript.svg` },
+      { name: "NestJS", src: `${import.meta.env.BASE_URL}logos/nestjs.svg` },
+      { name: "Node.js", src: `${import.meta.env.BASE_URL}logos/nodejs.svg` },
+      { name: "Docker", src: `${import.meta.env.BASE_URL}logos/docker.svg` },
+      { name: "Python", src: `${import.meta.env.BASE_URL}logos/python.svg` },
+      { name: "Java", src: `${import.meta.env.BASE_URL}logos/java.svg` },
+      { name: "React", src: `${import.meta.env.BASE_URL}logos/nestjs.svg` },
+      { name: "Linux", src: `${import.meta.env.BASE_URL}logos/linux.svg` }
     ],
     []
   );
