@@ -1,0 +1,135 @@
+html, body {
+  height: auto !important;
+  overflow-y: auto !important;
+  overflow-x: hidden;
+}
+
+/* #root ne doit JAMAIS devenir un container scroll */
+#root {
+  height: auto !important;
+  overflow: visible !important;
+  min-height: 100vh;
+}
+
+/* ===================== VARIABLES ===================== */
+:root{
+  --bg:#020617;
+  --green:#22c55e;
+  --green-soft: rgba(34,197,94,0.75);
+  --border:#0f172a;
+}
+
+/* ===================== BASE ===================== */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--green);
+}
+
+/* On laisse le vert global sans casser tous les div */
+a, h1, h2, h3, h4, h5, h6, p, span, li, label, small {
+  color: inherit;
+}
+
+/* ===================== CURSOR TYPING ===================== */
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+/* ===================== SCANLINE ===================== */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.02),
+    rgba(255,255,255,0.02) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  opacity: 0.12;
+  z-index: 9999;
+}
+
+/* ===================== HOME GRID RESPONSIVE ===================== */
+@media (max-width: 1100px) {
+  .home-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 700px) {
+  .home-grid { grid-template-columns: 1fr !important; }
+}
+
+/* ===================== HOME TILES HOVER ===================== */
+.tile {
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tile:hover {
+  transform: scale(1.045);
+  box-shadow:
+    0 0 0 1px rgba(34,197,94,0.6),
+    0 0 20px rgba(34,197,94,0.30);
+  z-index: 2;
+}
+
+.tile-image {
+  transition: transform 0.45s ease, filter 0.35s ease;
+}
+
+.tile:hover .tile-image {
+  transform: scale(1.12);
+  filter: brightness(1.18) contrast(1.05);
+}
+
+.tile-overlay {
+  transition: background 0.35s ease;
+}
+
+.tile:hover .tile-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(2,6,23,0.92),
+    rgba(2,6,23,0.35)
+  );
+}
+
+/* ===================== FORM FOCUS (CANAL DIRECT) ===================== */
+input:focus,
+textarea:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 12px rgba(34,197,94,0.22);
+}
+
+/* ===================== MARQUEE INFINI (ARSENAL) ===================== */
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-track{
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: marquee 18s linear infinite;
+}
+
+.marquee:hover .marquee-track{
+  animation-play-state: paused;
+}
+
+@keyframes marquee{
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Empêche le drag / sélection qui peut créer un scroll horizontal */
+.marquee img {
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
