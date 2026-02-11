@@ -4,11 +4,9 @@ export default function CanalDirect() {
   return (
     <Layout>
       <div style={styles.container}>
-
-        {/* TITRE */}
+       
         <h1 style={styles.title}>CANAL DIRECT</h1>
-
-        {/* LIENS */}
+       
         <div style={styles.links}>
           <a
             href="mailto:nouri.foudilbey@gmail.com"
@@ -34,8 +32,7 @@ export default function CanalDirect() {
           >
             💻 GitHub
           </a>
-
-          {/* CV */}
+          
           <a
             href="/projects/Curriculum Vitae.pdf"
             target="_blank"
@@ -45,14 +42,13 @@ export default function CanalDirect() {
             📄 Curriculum Vitae
           </a>
         </div>
-
-        {/* FORMULAIRE */}
+      
         <form
           action="https://formsubmit.co/nouri.foudilbey@gmail.com"
           method="POST"
           style={styles.form}
         >
-          {/* Options FormSubmit */}
+         
           <input type="hidden" name="_captcha" value="false" />
           <input
             type="hidden"

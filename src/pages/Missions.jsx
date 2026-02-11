@@ -26,19 +26,19 @@ export default function Missions() {
         title: "API rest",
         img: `${import.meta.env.BASE_URL}projects/API.jpg`,
         desc: "API rest pour un JobBoard",
-        href: "/case-files"
+        href: "https://github.com/nouri3406/API-rest"
       },
       {
         title: "jeu 2 D",
         img: `${import.meta.env.BASE_URL}projects/shoot em up.jpg`,
         desc: "Jeu 2D en Java",
-        href: "/case-files"
+        href: "https://github.com/nouri3406/Shoot-em-up"
       },
       {
         title: "tchat temps réél",
         img: `${import.meta.env.BASE_URL}projects/Tchatche.jpg`,
         desc: "Socket.io pour un tchat",
-        href: "/case-files"
+        href: "https://github.com/nouri3406/Socket-Tchat"
       },
     ],
     []
