@@ -4,16 +4,14 @@ export default function DossierOperateur() {
   return (
     <Layout>
       <div style={styles.container}>
-
-        {/* HEADER */}
+        
         <div style={styles.header}>
           <span style={styles.label}>DOSSIER OPÉRATEUR</span>
           <h1 style={styles.title}>
             Rendre le réel mesurable, fiable et exploitable.
           </h1>
         </div>
-
-        {/* STRATEGIC SPEECH */}
+        
         <div style={styles.panel}>
           <p>
             Je m'intéresse aux objets connectés quand ils deviennent
@@ -32,8 +30,7 @@ export default function DossierOperateur() {
             qui renforcent la maturité des solutions IoT / IIoT.
           </p>
         </div>
-
-        {/* ORIGINE */}
+        
         <div style={styles.panel}>
           <span style={styles.subLabel}>ORIGINE</span>
 
@@ -78,8 +75,7 @@ export default function DossierOperateur() {
           C'est l'assemblage logique de couches qui finissent au même endroit :
           rendre le réel mesurable et fiable.
         </div>
-
-        {/* POURQUOI IIOT */}
+      
         <div style={styles.panel}>
           <span style={styles.subLabel}>POURQUOI IoT / IIoT MAINTENANT</span>
 
@@ -101,7 +97,6 @@ export default function DossierOperateur() {
           </p>
         </div>
 
-        {/* CE QUE JE CHERCHE */}
         <div style={styles.panel}>
           <span style={styles.subLabel}>CE QUE JE CHERCHE</span>
 
@@ -174,6 +169,6 @@ const styles = {
     borderLeft: '2px solid #22c55e',
     paddingLeft: '12px',
     fontSize: '13px',
-    color: '#e5e7eb'
+    color: '#22c55e'
   }
 };
