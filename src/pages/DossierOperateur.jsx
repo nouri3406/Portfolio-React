@@ -125,6 +125,8 @@ export default function DossierOperateur() {
 
 const styles = {
   container: {
+    width: '100%' ,
+    boxSize: 'border-box',
     maxWidth: '900px',
     display: 'grid',
     gap: '16px'
@@ -137,7 +139,7 @@ const styles = {
   label: {
     fontSize: '10px',
     letterSpacing: '0.2em',
-    color: '#6b7280'
+    color: '#22c55e'
   },
 
   title: {
@@ -157,7 +159,7 @@ const styles = {
     display: 'block',
     fontSize: '10px',
     letterSpacing: '0.15em',
-    color: '#9ca3af',
+    color: '#22c55e',
     marginBottom: '8px'
   },
 

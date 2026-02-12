@@ -104,17 +104,19 @@ function LogoMarquee({ items }) {
 /* ---------------- STYLES ---------------- */
 
 const styles = {
- 
   page: {
     width: "100%",
-    overflowX: "hidden"
+    overflowX: "hidden" 
   },
 
   container: {
-    maxWidth: "980px",
+    width: "100%",           
+    maxWidth: "980px",       
     margin: "0 auto",
     display: "grid",
-    gap: "18px"
+    gap: "18px",
+    padding: "10px",         
+    boxSizing: "border-box"  
   },
 
   label: {
@@ -125,7 +127,8 @@ const styles = {
 
   h1: {
     marginTop: "8px",
-    marginBottom: 0
+    marginBottom: 0,
+    fontSize: "1.2rem",     
   },
 
   panel: {
@@ -133,7 +136,9 @@ const styles = {
     border: "1px solid #0f172a",
     padding: "14px",
     borderRadius: "12px",
-    boxShadow: "inset 0 0 18px rgba(34,197,94,0.06)"
+    boxShadow: "inset 0 0 18px rgba(34,197,94,0.06)",
+    width: "100%",           
+    boxSizing: "border-box"  
   },
 
   subLabel: {
@@ -145,50 +150,58 @@ const styles = {
   },
 
   panelBody: {
-    opacity: 0.95
+    opacity: 0.95,
+    fontSize: "0.9rem"      
   },
-
-  // 🔥 zone carrousel en bas
+  
   carouselSection: {
-    marginTop: "28px"
+    marginTop: "28px",
+    width: "100%",          
+    overflow: "hidden"      
   },
 
   marquee: {
     width: "100%",
-    overflow: "hidden",
-    border: "1px solid #0f172a",
-    borderRadius: "12px",
-    padding: "12px",
-    backgroundColor: "#020617"
-  },
-
-  marqueeTrack: {
-    display: "flex",
-    gap: "12px",
-    width: "max-content",
-    alignItems: "center",
-    willChange: "transform"
-    
-  },
-
-  logoCard: {
-    flexShrink: 0,
-    minWidth: "170px",
+    overflow: "hidden",     
     border: "1px solid #0f172a",
     borderRadius: "12px",
     padding: "12px",
     backgroundColor: "#020617",
+    boxSizing: "border-box" 
+  },
+
+  marquee: {
+    width: "100vw",           
+    marginLeft: "calc(-50vw + 50%)", 
+    overflow: "hidden",
+    padding: "20px 0",
+    backgroundColor: "#020617",
+  },
+
+  marqueeTrack: {
+    display: "flex",
+    gap: "15px",
+    width: "max-content", 
+    animation: "marquee 20s linear infinite", 
+  },
+
+  logoCard: {
+    flexShrink: 0,
+    width: "120px",         
+    padding: "10px",
     textAlign: "center",
-    boxShadow: "inset 0 0 18px rgba(34,197,94,0.04)"
+    backgroundColor: "rgba(34, 197, 94, 0.03)",
+    border: "1px solid #0f172a",
+    borderRadius: "8px"
   },
 
   logoImg: {
-    height: "56px",
+    height: "40px",         
     width: "100%",
     objectFit: "contain",
     display: "block",
     margin: "0 auto",
-    padding: "6px",
+    padding: "4px",
     borderRadius: "10px",
     background: "rgba(255,255,255,0.03)",
     filter: "drop-shadow(0 0 8px rgba(34,197,94,0.10))"
@@ -196,7 +209,7 @@ const styles = {
 
   logoName: {
     marginTop: "8px",
-    fontSize: "12px",
+    fontSize: "10px",       
     fontFamily: "monospace",
     letterSpacing: "0.12em",
     opacity: 0.95

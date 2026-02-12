@@ -149,14 +149,14 @@ const styles = {
     flexDirection: "column",
     gap: "14px",
     backgroundColor: "#020617",
-    border: "1px solid #0f172a",
+    border: "1px solid #22c55e",
     borderRadius: "10px",
     padding: "20px",
     boxShadow: "inset 0 0 20px rgba(34,197,94,0.06)"
   },
   input: {
     backgroundColor: "#020617",
-    border: "1px solid #0f172a",
+    border: "1px solid #22c55e",
     color: "#22c55e",
     padding: "10px",
     outline: "none",
@@ -164,7 +164,7 @@ const styles = {
   },
   textarea: {
     backgroundColor: "#020617",
-    border: "1px solid #0f172a",
+    border: "1px solid #22c55e",
     color: "#22c55e",
     padding: "10px",
     outline: "none",
