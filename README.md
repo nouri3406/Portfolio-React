@@ -11,6 +11,8 @@ npm run dev
 ```bash
 npm run build
 ```
+déployé sur :
+https://nouri3406.github.io/Portfolio-React/
 
 ## Routes
 /control-room  
